@@ -84,6 +84,7 @@ This PDB will store all tables, procedures, and related components for the Smart
 
 > 📷 **PDB Creation Confirmation**  
 > Description: This screenshot shows the successful creation of the pluggable database using Oracle tools. It confirms that the database is live and accessible for development.  
+---
 > ![PDB Creation](./screenshots/pdb.png)
 
 ---
@@ -94,6 +95,7 @@ The project user was granted full admin privileges to enable schema-level and sy
 
 > 📷 **Super Admin Privileges Granted**  
 > Description: This screenshot displays the privilege assignment interface, confirming that the project account has super admin rights in the PDB.  
+---
 > ![Admin Privileges](./screenshots/privilege.png)
 
 ---
@@ -104,6 +106,7 @@ To ensure full visibility into the database's performance and activities, Oracle
 
 > 📷 **OEM Access & Login**  
 > Description: This screenshot shows the user successfully logged into Oracle Enterprise Manager, with access to monitoring tools, session activity, and database status for the Smart Home Energy Management System.  
+---
 > ![OEM Access](./screenshots/oem.png)
 
 ---
