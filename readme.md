@@ -164,4 +164,73 @@ These constraints ensure that invalid or orphaned data cannot enter the system.
 - Protects relationships between entities
 
 ---
+# PL/SQL Capstone Project - Phase VI
+**Smart Home Energy Management System**  
+*Author: NGIRINSHUTI MUGISHA Joachim*  
+*Course: Database Development with PL/SQL*  
+*Date: [Current Date]*
+
+---
+
+## 📋 Phase VI Objectives
+- Implement analytical queries using window functions
+- Develop PL/SQL procedures and functions
+- Create a package for energy management operations
+- Test database interactions and transactions
+
+---
+
+## 📂 Activities
+
+### 1.Problem Statement:
+“Identify appliances that consumed more than 5 kWh per day using analytic functions, and display the max daily usage per appliance.”
+
+---
+### 2. Analytical Query: Daily Energy Consumption Analysis
+![Daily Consumption Analysis](./screenshots/problem%20statement.png)  
+*Identifies appliances with above-average energy usage*
+
+---
+
+### 3. Procedure: Log Energy Record
+![Log Energy Procedure](./screenshots/procedure.png)  
+*Inserts new energy consumption records*
+
+---
+
+### 4. Function: Calculate Appliance Daily Max kWh
+![Max kWh Function](./screenshots/function.png)  
+*Returns maximum daily consumption for an appliance*
+
+---
+
+### 5. Cursor Implementation
+![Cursor Usage](./screenshots/cursor.png)  
+*Displays max daily usage for all appliances*
+
+---
+
+### 6. Smart Energy Package
+![Package Implementation](./screenshots/package.png)  
+*Consolidates procedures and functions*
+
+---
+
+### 7. Testing Results
+![Test Cases](./screenshots/test%20on%20procedure%20and%20function.png)  
+*Verification of all implemented components*
+
+---
+
+## 🛠️ Technical Specifications
+- **Database:** Oracle PL/SQL
+- **Tools:** SQL Developer, Oracle Enterprise Manager
+- **Tables Used:** 
+  - `USER`
+  - `HOME` 
+  - `APPLIANCE`
+  - `ENERGY_USAGE_RECORD`
+
+---
+
 
