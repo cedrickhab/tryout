@@ -110,5 +110,58 @@ To ensure full visibility into the database's performance and activities, Oracle
 > ![OEM Access](./screenshots/oem.png)
 
 ---
+# 📘 Phase V: Table Implementation & Data Integrity
 
+## 🎯 Phase Objective
+
+The goal of Phase V is to convert the logical data model into physical Oracle SQL tables and ensure the integrity, consistency, and validity of the data through constraints and test data insertion.
+
+---
+
+## 📁 Deliverables
+
+### 1. Table Creation
+- All tables from the logical model (USER, HOME, APPLIANCE, ENERGY_USAGE_RECORD) were created in the Oracle database.
+- Attributes and data types match the logical design.
+
+🖼️ **Screenshot: Table Creation in SQL Developer**
+![Table Creation Screenshot](./screenshots/creation%20of%20all%20tables.png)
+
+### 2. Data Integrity Implementation
+- **NOT NULL**: Enforced on all primary keys and required fields.
+- **UNIQUE**: Enforced on `USER.email` to avoid duplicate entries.
+- **CHECK**: Enforced on `APPLIANCE.status` with values (`ON`, `OFF`, `IDLE`) only.
+- **DEFAULT**: `USER.created_at` auto-fills with `SYSDATE` if not provided.
+- **FOREIGN KEYS**:
+  - `HOME.user_id → USER.user_id`
+  - `APPLIANCE.home_id → HOME.home_id`
+  - `ENERGY_USAGE_RECORD.appliance_id → APPLIANCE.appliance_id`
+
+These constraints ensure that invalid or orphaned data cannot enter the system.
+
+### 3. Realistic Data Insertion
+- Sample records were inserted for all tables.
+- All values respect constraints and relationships, simulating realistic usage of smart homes.
+
+🖼️ **Screenshot: Data Insertion Output**
+![Data Insertion Screenshot](./screenshots/all%20data%20is%20in.png)
+
+---
+
+## 🔗 Entity Relationships Recap
+
+- One USER → Many HOMES  
+- One HOME → Many APPLIANCES  
+- One APPLIANCE → Many ENERGY_USAGE_RECORDS
+
+---
+
+## 📊 Benefits of Data Integrity
+
+- Prevents invalid data entries (e.g., negative energy values, orphaned homes)
+- Supports accurate analytics and reporting in later phases
+- Enforces business rules and enhances database reliability
+- Protects relationships between entities
+
+---
 
