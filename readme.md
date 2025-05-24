@@ -67,3 +67,45 @@ The design follows **Third Normal Form (3NF)**:
 > ![ERD Diagram](./screenshots/erd.png)
 
 ---
+# 💾 Phase IV – Physical Database Creation
+
+## 🧩 Objective
+
+Establish the physical database environment using Oracle's pluggable architecture. This includes creating the pluggable database (PDB), setting up super admin privileges, and confirming accessibility via Oracle Enterprise Manager (OEM).
+
+---
+
+## ⚙️ Pluggable Database (PDB) Setup
+
+A dedicated PDB was created for the project using the following naming convention:
+
+
+This PDB will store all tables, procedures, and related components for the Smart Home Energy Management System.
+
+> 📷 **PDB Creation Confirmation**  
+> Description: This screenshot shows the successful creation of the pluggable database using Oracle tools. It confirms that the database is live and accessible for development.  
+> ![PDB Creation](./screenshots/pdb.png)
+
+---
+
+## 🛡️ Super Admin Privileges Setup
+
+The project user was granted full admin privileges to enable schema-level and system-level operations such as table creation, auditing, and trigger management.
+
+> 📷 **Super Admin Privileges Granted**  
+> Description: This screenshot displays the privilege assignment interface, confirming that the project account has super admin rights in the PDB.  
+> ![Admin Privileges](./screenshots/privilege.png)
+
+---
+
+## 📊 Oracle Enterprise Manager (OEM) Access
+
+To ensure full visibility into the database's performance and activities, Oracle Enterprise Manager (OEM) was configured and successfully connected to the PDB.
+
+> 📷 **OEM Access & Login**  
+> Description: This screenshot shows the user successfully logged into Oracle Enterprise Manager, with access to monitoring tools, session activity, and database status for the Smart Home Energy Management System.  
+> ![OEM Access](./screenshots/oem.png)
+
+---
+
+
