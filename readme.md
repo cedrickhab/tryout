@@ -232,5 +232,80 @@ These constraints ensure that invalid or orphaned data cannot enter the system.
   - `ENERGY_USAGE_RECORD`
 
 ---
+#  Phase VII  
+**Advanced Database Programming and Auditing**  
 
+---
+
+## 📋 Phase VII Objectives  
+- Implement weekday/holiday operation restrictions  
+- Create comprehensive auditing system  
+- Develop security triggers and packages  
+
+---
+
+## 📂 Activities  
+
+### 1️⃣ Holiday Table Creation  
+---
+![Holiday Table](./screenshots/holiday.png)  
+*Stores restricted holiday dates for trigger validation*  
+
+---
+
+### 2️⃣ Audit Log Table Implementation  
+---
+![Audit Log Table](./screenshots/audit%20log%20created.png)  
+*Tracks all database operations with status*  
+
+---
+
+### 3️⃣ Restriction Trigger Development  
+---
+![Restriction Trigger](./screenshots/restrict%20trigger.png)  
+*Blocks weekday/holiday modifications*  
+
+---
+
+### 4️⃣ Audit Package Creation  
+---
+![Audit Package](./screenshots/audit%20functions.png)  
+*Centralizes audit logging functions*  
+
+---
+
+### 5️⃣ Weekday Restriction Test  
+---
+![Weekday Test](./screenshots/weekend%20restriction.png)  
+*Verifies trigger blocks weekday operations*  
+
+---
+
+### 6️⃣ Audit Log Verification  
+---
+![Audit Log Check](./screenshots/audit%20log%20verif.png)  
+*Confirms denied operations are logged*  
+
+---
+
+### 7️⃣ restriction trigger Test  
+---
+![Package Test](./screenshots/test%20completed.png)  
+*Verifies restriction trigger operations*  
+
+---
+
+## 🛠️ Technical Specifications  
+- **Database:** Oracle 19c  
+- **Tables Modified:**  
+  - `ENERGY_USAGE_RECORD` (restricted table)  
+- **New Objects:**  
+  - `HOLIDAYS` table  
+  - `AUDIT_LOG` table  
+  - `restrict_weekday_operations` trigger  
+  - `energy_audit_pkg` package  
+
+---
+
+## 📁 Repository Structure  
 
